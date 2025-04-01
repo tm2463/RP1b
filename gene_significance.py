@@ -54,10 +54,10 @@ def genbank_parser():
             start_seq = []
             for item in genbank.features:
                 if item.type == "CDS":
-                    locus_seq.append(item.qualifiers.get("locus_tag", ["Unknown"])[0])
+                    locus_seq.append(item.qualifiers.get("locus_tag"))
                     end_seq.append(int(item.location.end))
-                    full_gene_name_seq.append(item.qualifiers.get("product", ["Unknown"])[0])
-                    translation_seq.append(item.qualifiers.get("translation", ["Unknown"])[0])
+                    full_gene_name_seq.append(item.qualifiers.get("product"))
+                    translation_seq.append(item.qualifiers.get("translation"))
                     start_seq.append(int(item.location.start))
         locus.append(locus_seq)
         end_pos.append(end_seq)
