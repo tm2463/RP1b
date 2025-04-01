@@ -1,3 +1,10 @@
+"""
+The program extracts sequences from fasta files based on user defined start and end genes
+The purpose of this program is to aid exploratory analysis but extracting sections identified as containing recombination
+The output is a multifasta file that can be aligned with mauve
+SNPs can then be exported and processed through Mauve.py
+"""
+
 from Bio import SeqIO
 
 
@@ -55,4 +62,6 @@ def get_seqs(file_name, first, last):
             txt.write(sequences[start_coord:end_coord] + '\n')
 
 
+# 3 inputs for the function: Outfile file name, the first gene name and the last gene name
+# in order to work the first and last genes must be common among all genomes
 get_seqs('recomb_check_band_1', 'barA', 'dld')
