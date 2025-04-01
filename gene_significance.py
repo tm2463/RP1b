@@ -1,6 +1,7 @@
 """
-This program takes the export SNP output from Mauve and returns the top 10 genes sorted by SNP density.
+This program takes the export SNP output from Mauve and returns the top 10 genes sorted by SNP density
 File handling is the same as in Mauve.py
+The GenBank files for which the alignment was created are needed for the GenBank parser
 """
 
 import numpy as np
