@@ -42,7 +42,6 @@ def get_data(bin, file):
         for y in data[x]:
             if y != 0:
                 density[i, y-1] += 1
-    density = density[1:]
     return density, data, maximum
 
 
