@@ -1,3 +1,8 @@
+"""
+This program takes the export SNP output from Mauve and returns the top 10 genes sorted by SNP density.
+File handling is the same as in Mauve.py
+"""
+
 import numpy as np
 import pandas as pd
 from collections import Counter
