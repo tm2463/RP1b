@@ -2,7 +2,9 @@
 Python scripts used throughout the project
 
 Other files:
+
 Gene Presence/Absence from Panaroo
+
 Top 20 Genes after BLAST 
 
 To Do:
